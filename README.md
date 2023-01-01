@@ -1,6 +1,11 @@
-[url=https://ibb.co/HV4zCYD][img]https://i.ibb.co/rm063MG/Screenshot-2023-01-01-16-43-17-1366x768.png[/img][/url]
+<p align="center">
+    <img src="https://i.ibb.co/rm063MG/Screenshot-2023-01-01-16-43-17-1366x768.png" />
+</p>
+<p align="center">
+    <img src="https://i.ibb.co/5kqfdNW/Screenshot-2023-01-01-14-59-40-1366x768.png" />
+</p>
 
-[url=https://ibb.co/pQC9gtv][img]https://i.ibb.co/5kqfdNW/Screenshot-2023-01-01-14-59-40-1366x768.png[/img][/url]
+
 
 # Features:
 
