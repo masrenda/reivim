@@ -1,3 +1,7 @@
+[url=https://ibb.co/HV4zCYD][img]https://i.ibb.co/rm063MG/Screenshot-2023-01-01-16-43-17-1366x768.png[/img][/url]
+
+[url=https://ibb.co/pQC9gtv][img]https://i.ibb.co/5kqfdNW/Screenshot-2023-01-01-14-59-40-1366x768.png[/img][/url]
+
 # Features:
 
 ### Plugins
@@ -18,9 +22,15 @@
 - alpha-nvim
 - which-key.nvim
 - SmoothCursor.nvim
+- telescope.nvim
+- nvim-treesitter
+- coc.nvim
+- gitsigns.nvim
+- lspsaga.nvim
+- auto-save.nvim
+
 ### Colorschemes
 - nightfox.nvim
-
 
 ### Cmp
 - nvim-cmp
@@ -35,3 +45,10 @@
 - friendly-snippets
 
 ### LSP
+- nvim-lspconfig
+- mason.nvim
+- mason-lspconfig
+- null-ls.nvim
+
+### Formatters and linters
+- vim-illuminate
