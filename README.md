@@ -9,7 +9,9 @@
 
 # Features:
 
-### Plugins
+<details>
+
+<summary>Plugins</summary>
 - Packer
 - Plenary
 - nvim-autopairs
@@ -33,27 +35,43 @@
 - gitsigns.nvim
 - lspsaga.nvim
 - auto-save.nvim
+</details>
 
-### Colorschemes
+<details>
+<summary>Colorschemes</summary>
+
 - nightfox.nvim
+</details>
 
-### Cmp
+<details>
+<summary>CMP</summary>
+
 - nvim-cmp
 - cmp-buffer
 - cmp-path
 - cmp_luasnip
 - cmp-nvim-lsp
 - cmp-nvim-lua
+</details>
 
-### Snippets
+<details>
+<summary>Snippets</summary>
+
 - LuaSnip
 - friendly-snippets
+</details>
 
-### LSP
+<details>
+<summary>LSP</summary>
+
 - nvim-lspconfig
 - mason.nvim
 - mason-lspconfig
 - null-ls.nvim
+</details>
 
-### Formatters and linters
+<details>
+<summary>Formatters and linters</summary>
+
 - vim-illuminate
+</details>
