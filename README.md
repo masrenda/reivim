@@ -12,6 +12,7 @@
 <details>
 
 <summary>Plugins</summary>
+
 - Packer
 - Plenary
 - nvim-autopairs
