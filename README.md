@@ -1,10 +1,14 @@
-[url=https://ibb.co/HV4zCYD][img]https://i.ibb.co/rm063MG/Screenshot-2023-01-01-16-43-17-1366x768.png[/img][/url]
-
-[url=https://ibb.co/pQC9gtv][img]https://i.ibb.co/5kqfdNW/Screenshot-2023-01-01-14-59-40-1366x768.png[/img][/url]
+<p align="center">
+    <img src="https://i.ibb.co/rm063MG/Screenshot-2023-01-01-16-43-17-1366x768.png" />
+</p>
+<p align="center">
+    <img src="https://i.ibb.co/5kqfdNW/Screenshot-2023-01-01-14-59-40-1366x768.png" />
+</p>
 
 # Features:
 
 ### Plugins
+
 - Packer
 - Plenary
 - nvim-autopairs
@@ -30,9 +34,11 @@
 - auto-save.nvim
 
 ### Colorschemes
+
 - nightfox.nvim
 
 ### Cmp
+
 - nvim-cmp
 - cmp-buffer
 - cmp-path
@@ -41,14 +47,17 @@
 - cmp-nvim-lua
 
 ### Snippets
+
 - LuaSnip
 - friendly-snippets
 
 ### LSP
+
 - nvim-lspconfig
 - mason.nvim
 - mason-lspconfig
 - null-ls.nvim
 
 ### Formatters and linters
+
 - vim-illuminate
