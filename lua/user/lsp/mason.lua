@@ -11,6 +11,15 @@ local servers = {
   "prosemd_lsp",
   "remark_ls",
   "zk",
+  "denols",
+  "eslint",
+  "quick_lint_js",
+  "rome",
+  "cssls",
+  "cssmodules_ls",
+  "tailwindcss",
+  "vuels",
+  "volar",
 }
 
 local settings = {
