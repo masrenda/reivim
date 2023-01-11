@@ -66,6 +66,41 @@ vim.opt.title = true
 vim.opt.titlestring = "%<%F%=%l/%L - Masren"
 
 
+
+lvim.keys.normal_mode['x'] = '"_x'
+
+-- Increment/decrement
+lvim.keys.normal_mode['+']= '<C-a>'
+lvim.keys.normal_mode['-']= '<C-x>'
+
+-- -- Delete a word backwards
+lvim.keys.normal_mode['dw'] = 'vb"_d'
+
+-- -- Select all
+lvim.keys.normal_mode[ '<C-a>'] = 'gg<S-v>G'
+
+-- -- Save with root permission (not working for now)
+-- --vim.api.nvim_create_user_command('W', 'w !sudo tee > /dev/null %', {})
+
+-- -- New tab
+lvim.keys.normal_mode['te'] = ':tabedit'
+-- -- Split window
+lvim.keys.normal_mode["ss"] = ":split<Return><C-w>w"
+lvim.keys.normal_mode["sv"] = ":vsplit<Return><C-w>w"
+-- Move window
+lvim.keys.normal_mode['<Space>']= '<C-w>w'
+lvim.keys.normal_mode['sh'] = '<C-w>h'
+lvim.keys.normal_mode['sk'] = '<C-w>k'
+lvim.keys.normal_mode['sl'] = '<C-w>l'
+lvim.keys.normal_mode['sj'] = '<C-w>j'
+
+-- Resize window  
+lvim.keys.normal_mode["<C-w><left>"] = "<C-w><"
+lvim.keys.normal_mode["<C-w><right>"] = "<C-w>>"
+lvim.keys.normal_mode["<C-w><up>"] = "<C-w>+"
+lvim.keys.normal_mode["<C-w><down>"] = "<C-w>-"
+
+
 lvim.keys.visual_mode["J"] = ":move '>+1<CR>gv-gv"
 lvim.keys.visual_mode["K"] = ":move '<-2<CR>gv-gv"
 lvim.keys.visual_mode["<A-j>"] = ":move '>+1<CR>gv-gv"
@@ -198,12 +233,14 @@ lvim.lsp.installer.setup.ensure_installed = {
   "emmet_ls",
   "tsserver",
   "intelephense",
-  "tailwindcss"
+  "tailwindcss",
+  "grammarly",
 }
 
 require("lvim.lsp.manager").setup("emmet_ls")
 require("lvim.lsp.manager").setup("tailwindcss")
 require("lvim.lsp.manager").setup("intelephense")
+require("lvim.lsp.manager").setup("grammarly")
 
 local formatters = require("lvim.lsp.null-ls.formatters")
 formatters.setup({
