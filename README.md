@@ -2,24 +2,31 @@
    <img src="https://i.ibb.co/qDHNSj9/Screenshot-2023-01-11-09-11-17-1366x768.png" alt="Screenshot-2023-01-11-09-11-17-1366x768" border="0">
 </p>
 
-<p align="center">
-It's still in the overall lunarvim configuration, but I customised it slightly for my daily needs.
-</p>
+# Renvim dotfiles
 
-## Feature Costumization by me:
+It's still in the overall lunarvim configuration, but I customised it slightly for my daily needs. <br>
+I've set this up for Vue, Nuxt, and PHP developers.
 
-### Plugins
+> _For some reason, the HTML tag element in Vue and PHP didn't work before, so I got around it a bit by re-stacking the HTML tags in one place._ > <br>
 
-- [live-server](https://github.com/manzeloth/live-server)
-- [neosolarized.nvim](https://github.com/svrana/neosolarized.nvim)
+> **Warning** - Never try to costumise the `~/.local/share/lunarvim/lvim` folder
 
-### etc
+## Content
 
-- HTML snippets for Vue and PHP
-  > For some reason, the HTML tag element in Vue and PHP didn't work before, so I got around it a bit by re-stacking the HTML tags in one place.
+- Vim (LunarVim) config
+- Alacritty config
 
-### Reference
+## LunarVim Setup
 
-- theme: [Takuya's dotfiles](https://github.com/craftzdog/dotfiles-public)
+- Requires [Neovim](https://neovim.io/) (>= 0.8).
+- Have [git](https://cli.github.com/), [make](https://www.gnu.org/software/make/), [pip](https://pypi.org/project/pip/), [python](https://www.python.org/), [npm](https://npmjs.com/), [node](https://nodejs.org/), and [cargo](https://www.rust-lang.org/tools/install) installed on your system.
+- [PowerShell 7+](https://learn.microsoft.com/en-us/powershell/scripting/whats-new/migrating-from-windows-powershell-51-to-powershell-7?view=powershell-7.2) (for Windows).
+  > I used [Alacritty](https://alacritty.org/) as a terminal.
 
-<br>
+## How to Use
+
+_Coming soon ..._
+
+## Theme Reference
+
+[Takuya's dotfiles](https://github.com/craftzdog/dotfiles-public)
