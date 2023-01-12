@@ -220,20 +220,28 @@ lvim.lsp.installer.setup.ensure_installed = {
   "intelephense",
   "tailwindcss",
   "grammarly",
-  "vuels"
+  "vuels",
+  "volar"
 }
 
+require("lvim.lsp.manager").setup("sumneko_lua")
+require("lvim.lsp.manager").setup("jsonls")
+require("lvim.lsp.manager").setup("html")
+require("lvim.lsp.manager").setup("cssls")
 require("lvim.lsp.manager").setup("emmet_ls")
-require("lvim.lsp.manager").setup("tailwindcss")
+require("lvim.lsp.manager").setup("tsserver")
 require("lvim.lsp.manager").setup("intelephense")
+require("lvim.lsp.manager").setup("tailwindcss")
 require("lvim.lsp.manager").setup("grammarly")
 require("lvim.lsp.manager").setup("vuels")
-require("lvim.lsp.manager").setup("html")
+require("lvim.lsp.manager").setup("volar")
 
 local formatters = require("lvim.lsp.null-ls.formatters")
 formatters.setup({
   { command = "stylua", filetypes = { "lua" } },
-  { command = "prettierd", filetypes = { "vue" } },
+  { command = "prettierd",
+    filetypes = { "javascript", "javascriptreact", "typescript", "typescriptreact", "vue", "css", "scss", "less", "html",
+      "json", "jsonc", "yaml", "markdown", "markdown.mdx", "graphql", "handlebars", "php", "blade", "blade.php" } },
   { command = "blade-formatter", filetypes = { "php", "blade", "blade.php" } },
 })
 
