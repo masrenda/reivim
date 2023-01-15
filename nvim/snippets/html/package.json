@@ -1,0 +1,17 @@
+{
+  "name": "html",
+  "version": "1.0.0",
+  "description": "HTML code snippets",
+  "contributes": {
+    "snippets": [
+      {
+        "language": [
+          "html",
+          "vue",
+          "php"
+        ],
+        "path": "./html.json"
+      }
+    ]
+  }
+}

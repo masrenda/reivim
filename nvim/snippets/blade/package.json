@@ -1,0 +1,41 @@
+{
+  "name": "blade",
+  "version": "1.0.0",
+  "description": "Blade code snippets",
+  "contributes": {
+    "snippets": [
+      {
+        "language": [
+          "blade",
+          "php",
+          "blade.php"
+        ],
+        "path": "./snippets.json"
+      },
+      {
+        "language": [
+          "blade",
+          "php",
+          "blade.php"
+        ],
+        "path": "./helpers.json"
+      },
+      {
+        "language": [
+          "blade",
+          "php",
+          "blade.php"
+        ],
+        "path": "./livewire.json"
+      },
+      {
+        "language": [
+          "blade",
+          "php",
+          "blade.php"
+        ],
+        "path": "./blade.json"
+      }
+    ]
+  }
+}
