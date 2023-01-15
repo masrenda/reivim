@@ -1,5 +1,6 @@
 ![Screenshot](./images/image1.png)
 ![Screenshot](./images/image2.png)
+![Screenshot](./images/image3.png)
 
 # Renvim dotfiles
 
@@ -60,7 +61,7 @@ I've set this up for Vue, Nuxt, and PHP (soon) developers.
 
 If you only wanna use the nvim configuration, then you should move the `nvim` folder to `~/.config/put_your_folder_here`.
 
-> *Coming soon ...*
+> *Coming soon ...* <br>
 > *I'll write the doc on docusaurus.*
 
 ## Theme Reference
