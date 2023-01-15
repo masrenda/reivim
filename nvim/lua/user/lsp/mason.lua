@@ -9,6 +9,7 @@ local servers = {
   "jsonls",
   "yamlls",
   "vuels",
+  "grammarly",
 }
 
 local settings = {

@@ -21,9 +21,14 @@ null_ls.setup {
     formatting.blade_formatter.with {
       extra_filetypes = { "blade", "php", "blade.php" },
       extra_args = { "--write", "$FILENAME" },
-      command = "blade-formatter"
+      command = "blade-formatter",
     },
     formatting.google_java_format,
+    formatting.remark.with {
+      extra_filetypes = { "markdown" },
+      extra_args = { "--no-color", "--silent" },
+      command = "remark",
+    },
     diagnostics.flake8,
   },
 }
