@@ -74,7 +74,7 @@ Plugins
 
 If you only wanna use the nvim configuration, then you should move the `nvim` folder to `~/.config/put_your_folder_here`.
 
-> *Coming soon ...* <br> > *I'll write the doc on docusaurus.*
+> *Coming soon ...* <br> *I'll write the doc on docusaurus.*
 
 ## Theme Reference
 
