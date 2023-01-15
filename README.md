@@ -60,7 +60,8 @@ I've set this up for Vue, Nuxt, and PHP (soon) developers.
 
 If you only wanna use the nvim configuration, then you should move the `nvim` folder to `~/.config/put_your_folder_here`.
 
-> *Coming soon ...* > *I'll write the doc on docusaurus.*
+> *Coming soon ...*
+> *I'll write the doc on docusaurus.*
 
 ## Theme Reference
 
