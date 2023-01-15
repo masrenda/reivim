@@ -10,6 +10,11 @@ I've set this up for Vue, Nuxt, and PHP (soon) developers.
 
 ## Features
 
+<details markdown="1">
+<summary>
+Plugins
+</summary>
+
 *   [packer](https://github.com/wbthomason/packer.nvim)
 *   [plenary](https://github.com/nvim-lua/plenary.nvim)
 *   [nvim-autopairs](https://github.com/windwp/nvim-autopairs)
@@ -46,6 +51,14 @@ I've set this up for Vue, Nuxt, and PHP (soon) developers.
 *   [nvim-dap-ui](https://github.com/rcarriga/nvim-dap-ui)
 *   [DAPInstall.nvim](https://github.com/ravenxrz/DAPInstall.nvim)
 
+</details>
+
+<details markdown="2">
+<summary>Custom Snippets</summary> 
+
+![Screenshot](./images/image4.png)
+</details>
+
 ## Content
 
 *   (Neo)Vim config
@@ -61,8 +74,7 @@ I've set this up for Vue, Nuxt, and PHP (soon) developers.
 
 If you only wanna use the nvim configuration, then you should move the `nvim` folder to `~/.config/put_your_folder_here`.
 
-> *Coming soon ...* <br>
-> *I'll write the doc on docusaurus.*
+> *Coming soon ...* <br> > *I'll write the doc on docusaurus.*
 
 ## Theme Reference
 
