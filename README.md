@@ -105,7 +105,7 @@ You don't need to enter `commit` and `{}` there.
 
 ### Snippets
 
-If we look at the directory structure of the `snippets` folder, there is one file in each folder there that should not be changed, namely: package.json
+If we look at the directory structure of the `snippets` folder, there is one file in each folder there that should not be changed, namely: `package.json`
 
 ```bash
 snippets
@@ -113,15 +113,15 @@ snippets
 │   ├── blade.json
 │   ├── helpers.json
 │   ├── livewire.json
-│   ├── package.json
+│   ├── package.json    <--
 │   └── snippets.json
 ├── html
 │   ├── html.json
-│   └── package.json
+│   └── package.json    <--
 ├── md
 │   ├── md.json
-│   └── package.json
+│   └── package.json    <--
 └── php
-    ├── package.json
+    ├── package.json    <--
     └── php.json
 ```
