@@ -83,7 +83,7 @@ nvim
 
 ### Plugins
 
-You can delete, edit, or add plugins to the `~/PATH/nvim/lua/user/plugins.lua` file.
+You can delete, edit, or add plugins to the `~/$PATH/nvim/lua/user/plugins.lua` file.
 
 Find `return packer.startup(function(use)`, then add the plugin below it.
 
@@ -169,4 +169,19 @@ In the `php.json` file, that's where the snippet is.
 
 You can create a snippet by following the example.
 
-If you don't know what to write in your snippet, you can visit [friendly-snippets](https://github.com/rafamadriz/friendly-snippets/tree/main/snippets) or you can get snippets from the [vscode marketplace](https://marketplace.visualstudio.com/) there.
+If you don't know what to write in your snippet, you can visit [friendly-snippets](https://github.com/rafamadriz/friendly-snippets/tree/main/snippets) or you can get snippets from the [vscode marketplace](https://marketplace.visualstudio.com/) there. 
+
+Once you've created your snippets, you can go straight to the `~/$PATH/.config/nvim/lua/user/cmp.lua` file and register your snippets there.
+
+```lua
+...
+
+-- Load custom snippets
+require("luasnip/loaders/from_vscode").lazy_load { paths = { "~/.config/nvim/snippets/html" } }
+require("luasnip/loaders/from_vscode").lazy_load { paths = { "~/.config/nvim/snippets/php" } }
+require("luasnip/loaders/from_vscode").lazy_load { paths = { "~/.config/nvim/snippets/blade" } }
+require("luasnip/loaders/from_vscode").lazy_load { paths = { "~/.config/nvim/snippets/md" } }
+require("luasnip/loaders/from_vscode").lazy_load {paths = {"~/$PATH/nvim/snippets/your_snippet"}}
+
+...
+```
