@@ -10,7 +10,7 @@ I've set up this configuration for javascript developers.
 * Customizing Snippets
 
 ## Installation
-You can perform the commands bellow:
+You can follow these steps:
 ```bash
 git clone https://github.com/masrenda/renvim-dotfiles 
 cd renvim-dotfiles
