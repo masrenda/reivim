@@ -83,7 +83,7 @@ nvim
 
 ### Plugins
 
-You can delete, edit, or add plugins to the `~/PATH/nvim/lua/user/plugins.lua` file. 
+You can delete, edit, or add plugins to the `~/PATH/nvim/lua/user/plugins.lua` file.
 
 Find `return packer.startup(function(use)`, then add the plugin below it.
 
@@ -104,3 +104,5 @@ return packer.startup(function(use)
 You don't need to enter `commit` and `{}` there.
 
 ### Snippets
+
+In the `~/PATH/nvim/snippets/` directory, 
