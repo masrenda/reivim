@@ -42,6 +42,32 @@ I've set this up for Vue, Nuxt, and PHP (soon) developers.
 *   [nvim-dap-ui](https://github.com/rcarriga/nvim-dap-ui)
 *   [DAPInstall.nvim](https://github.com/ravenxrz/DAPInstall.nvim)
 
+## Custom Config(s)
+#### Snippets
+ You can create your own snippet by:
+
+In the `nvim`  directory in the `~/.config/nvim/snippets/your_snippet_folder_here` directory, add the "your snippets" folder there. Then you can configure your own snippets.
+
+```bash
+snippets
+├── blade
+│   ├── blade.json
+│   ├── helpers.json
+│   ├── livewire.json
+│   ├── package.json
+│   └── snippets.json
+├── html
+│   ├── html.json
+│   └── package.json
+├── md
+│   ├── md.json
+│   └── package.json
+└── php
+    ├── package.json
+    └── php.json
+```
+
+You only needs 2 json files there: `package.json` and `your_file_name.json`
 ## Theme Reference
 
 [Takuya's dotfiles](https://github.com/craftzdog/dotfiles-public)
