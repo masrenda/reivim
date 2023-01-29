@@ -133,7 +133,7 @@ Let's take one example in the php snippet:
 The `package.json` file contains `name`, `version`, `description`, etc.
 
 ```json
-// package.json
+<!-- package.json -->
 
 {
   "name": "php",
@@ -157,7 +157,7 @@ The `package.json` file contains `name`, `version`, `description`, etc.
 In the `php.json` file, that's where the snippet is.
 
 ```json
-// php.json
+<!-- php.json -->
 
 {
   "class …": {
