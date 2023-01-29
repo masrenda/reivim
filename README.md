@@ -85,7 +85,7 @@ nvim
 
 You can delete, edit, or add plugins to the `~/PATH/nvim/lua/user/plugins.lua` file.
 
-```bash
+```lua
 local fn = vim.fn
 
 -- Automatically install packer
