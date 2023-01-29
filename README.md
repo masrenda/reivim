@@ -10,11 +10,6 @@ I've set this up for Vue, Nuxt, and PHP (soon) developers.
 
 ## Features
 
-<details markdown="1">
-<summary>
-Plugins
-</summary>
-
 *   [packer](https://github.com/wbthomason/packer.nvim)
 *   [plenary](https://github.com/nvim-lua/plenary.nvim)
 *   [nvim-autopairs](https://github.com/windwp/nvim-autopairs)
@@ -50,16 +45,6 @@ Plugins
 *   [nvim-dap](https://github.com/mfussenegger/nvim-dap)
 *   [nvim-dap-ui](https://github.com/rcarriga/nvim-dap-ui)
 *   [DAPInstall.nvim](https://github.com/ravenxrz/DAPInstall.nvim)
-
-</details>
-
-<details markdown="2">
-<summary>Custom Snippets</summary> 
-
-![Screenshot](./images/image4.png)
-</details>
-
-
 
 ## Theme Reference
 
