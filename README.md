@@ -10,14 +10,18 @@ I've set up this configuration for javascript developers.
 <summary>
 Rich in Plugins
 </summary>
+<br>
 You can view a list of plugins installed in the `~/.config/nvim/lua/user/plugins.lua` file.
 
 </details>
----
+
+***
+
 <details>
 <summary>
 Customizing Snippets
 </summary>
+<br>
 You can view a list of snippets installed in the `~/.config/nvim/plugin/` directory.
 </details>
 
