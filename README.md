@@ -13,7 +13,7 @@ Rich in Plugins
 You can view a list of plugins installed in the `~/.config/nvim/lua/user/plugins.lua` file.
 
 </details>
-
+---
 <details>
 <summary>
 Customizing Snippets
