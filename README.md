@@ -105,7 +105,7 @@ You don't need to enter `commit` and `{}` there.
 
 ### Snippets
 
-If we look at the directory structure of the `snippets` folder, there is one file in each folder there that should not be changed, namely: `package.json`
+If we look at the directory structure of the `snippets` folder, there's one file in each folder there that shouldn't be renamed, namely: `package.json`
 
 ```bash
 snippets
@@ -124,4 +124,66 @@ snippets
 └── php
     ├── package.json    <<
     └── php.json
+```
+
+Let's take one example in the php snippet:
+
+The `package.json` file contains `name`, `version`, `description`, etc.
+
+```json
+{
+  "name": "php",
+  "version": "1.0.0",
+  "description": "PHP code snippets",
+  "contributes": {
+    "snippets": [
+      {
+        "language": [
+          "php",
+          "blade",
+          "blade.php"
+        ],
+        "path": "./php.json"    <<
+      }
+    ]
+  }
+}
+```
+
+In the `php.json` file, that's where the snippet is. You can create a snippet by following the example.
+
+```json
+{
+  "class …": {
+    "prefix": "class",
+    "body": [
+      "class ${1:ClassName} ${2:extends ${3:AnotherClass}} ${4:implements ${5:Interface}} {",
+      "\t$0",
+      "}",
+      ""
+    ],
+    "description": "Class definition"
+  },
+  "PHPDoc class …": {
+    "prefix": "doc_class",
+    "body": [
+      "/**",
+      " * ${6:undocumented class}",
+      " */",
+      "class ${1:ClassName} ${2:extends ${3:AnotherClass}} ${4:implements ${5:Interface}} {",
+      "\t$0",
+      "}",
+      ""
+    ],
+    "description": "Documented Class Declaration"
+  },
+  "function __construct": {
+    "prefix": "con",
+    "body": [
+      "${1:public} function __construct(${2:${3:Type} \\$${4:var}${5: = ${6:null}}}) {",
+      "\t\\$this->${4:var} = \\$${4:var};$0",
+      "}"
+    ]
+  }
+}
 ```
