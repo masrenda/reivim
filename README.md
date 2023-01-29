@@ -25,6 +25,7 @@ mv nvim ~/PATH/.config/
 <summary>
 Directory Structure
 </summary>  
+<br>
 <pre>
 ├── init.lua
 ├── lua
