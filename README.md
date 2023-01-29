@@ -21,9 +21,12 @@ mv nvim ~/PATH/.config/
 
 ## Customizing
 
-### Directory structure
-
-```bash
+<details>
+<summary>
+Directory Structure
+</summary>  
+</details>
+<pre>
 ├── init.lua
 ├── lua
 │   └── user
@@ -74,11 +77,10 @@ mv nvim ~/PATH/.config/
     └── php
         ├── package.json
         └── php.json
-
-```
+</pre>
 
 ### Plugins
 
-You can delete, edit, or add plugins to the `~/PATH/nvim/lua/user/plugins.lua file.`
+You can delete, edit, or add plugins to the `~/PATH/nvim/lua/user/plugins.lua` file.
 
 ### Snippets
