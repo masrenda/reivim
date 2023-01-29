@@ -88,7 +88,7 @@ You can delete, edit, or add plugins to the `~/PATH/nvim/lua/user/plugins.lua` f
 Find `return packer.startup(function(use)`, then add the plugin below it.
 
 ```lua
-....
+...
 
 return packer.startup(function(use)
   -- My plugins here
@@ -98,7 +98,7 @@ return packer.startup(function(use)
   use { "numToStr/Comment.nvim", commit = "97a188a98b5a3a6f9b1b850799ac078faa17ab67" }
   use 'authorplugin/plugin'
 
-....
+...
 ```
 
 You don't need to enter `commit` and `{}` there
