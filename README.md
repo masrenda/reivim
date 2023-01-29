@@ -1,10 +1,15 @@
-# Renvim dotfiles
+# Renvim
 
-I've set this up for Vue, Nuxt, and PHP (soon) developers.
+I've set up this configuration for javascript developers.
 
-> **Warning** - If you wanna edit the config to your heart's content, that's fine. But, damage to the configuration's at your own risk.
+> **Warning** - If you wanna try customizing the configuration other than what's given in the documentation, do it at your own risk.
 
 ## Features
+
+<details markdown="1">
+<summary>
+Plugins
+</summary>
 
 *   [packer](https://github.com/wbthomason/packer.nvim)
 *   [plenary](https://github.com/nvim-lua/plenary.nvim)
@@ -42,47 +47,8 @@ I've set this up for Vue, Nuxt, and PHP (soon) developers.
 *   [nvim-dap-ui](https://github.com/rcarriga/nvim-dap-ui)
 *   [DAPInstall.nvim](https://github.com/ravenxrz/DAPInstall.nvim)
 
+</details>
 
-## Installation
-You can clone this repository by:
-```bash
-git clone https://github.com/masrenda/renvim-dotfiles
-```
-
-Then inside the `renvim-dotfiles` folder there is an `nvim` folder. you can move the nvim folder into `~/.config/paste_here` by:
-
-```bash
-mv ~/PATH/renvim-dotfiles/nvim ~/.config/
-```
-Make sure you are connected to an internet connection. Then wait for all the plugins that are being downloaded to finish. 
-
-If when downloading a plugin there is an error during installation, just wait for the installation to finish. Then log back in by typing the command `nvim` on your terminal, then type `:Mason` in normal mode
-## Custom Config(s)
-### Snippets
-
-
-In the `nvim`  directory in the `~/.config/nvim/snippets/your_snippet_folder_here` directory, add the "your snippets" folder there. Then you can configure your own snippets.
-
-```bash
-snippets
-├── blade
-│   ├── blade.json
-│   ├── helpers.json
-│   ├── livewire.json
-│   ├── package.json
-│   └── snippets.json
-├── html
-│   ├── html.json
-│   └── package.json
-├── md
-│   ├── md.json
-│   └── package.json
-└── php
-    ├── package.json
-    └── php.json
-```
-
-You only needs 2 json files there: `package.json` and `your_file_name.json`
 ## Theme Reference
 
 [Takuya's dotfiles](https://github.com/craftzdog/dotfiles-public)
