@@ -88,8 +88,6 @@ You can delete, edit, or add plugins to the `~/PATH/nvim/lua/user/plugins.lua` f
 Find `return packer.startup(function(use)`, then add the plugin below it.
 
 ```lua
--- plugins.lua
-
 ...
 
 return packer.startup(function(use)
@@ -133,8 +131,6 @@ Let's take one example in the php snippet:
 The `package.json` file contains `name`, `version`, `description`, etc.
 
 ```json
-<!-- package.json -->
-
 {
   "name": "php",
   "version": "1.0.0",
@@ -157,8 +153,6 @@ The `package.json` file contains `name`, `version`, `description`, etc.
 In the `php.json` file, that's where the snippet is.
 
 ```json
-<!-- php.json -->
-
 {
   "class …": {
     "prefix": "class",
