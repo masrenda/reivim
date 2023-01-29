@@ -1,7 +1,3 @@
-![Screenshot](./images/image1.png)
-![Screenshot](./images/image2.png)
-![Screenshot](./images/image3.png)
-
 # Renvim dotfiles
 
 I've set this up for Vue, Nuxt, and PHP (soon) developers.
