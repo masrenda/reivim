@@ -7,8 +7,10 @@ I've set up this configuration for javascript developers.
 ## Features
 
 *   Rich in Plugins <br>
+
 You can view a list of plugins installed in the `~/.config/nvim/lua/user/plugins.lua` file. <br>
 *   Customizing Snippets <br>
+
 You can view a list of snippets installed in the ~/.config/nvim/snippets/ directory.
 
 ## Theme Reference
