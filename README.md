@@ -88,6 +88,8 @@ You can delete, edit, or add plugins to the `~/PATH/nvim/lua/user/plugins.lua` f
 Find `return packer.startup(function(use)`, then add the plugin below it.
 
 ```lua
+-- plugins.lua
+
 ...
 
 return packer.startup(function(use)
@@ -131,6 +133,8 @@ Let's take one example in the php snippet:
 The `package.json` file contains `name`, `version`, `description`, etc.
 
 ```json
+// package.json
+
 {
   "name": "php",
   "version": "1.0.0",
@@ -143,16 +147,18 @@ The `package.json` file contains `name`, `version`, `description`, etc.
           "blade",
           "blade.php"
         ],
-        "path": "./php.json"    <<
+        "path": "./php.json"
       }
     ]
   }
 }
 ```
 
-In the `php.json` file, that's where the snippet is. You can create a snippet by following the example.
+In the `php.json` file, that's where the snippet is.
 
 ```json
+// php.json
+
 {
   "class …": {
     "prefix": "class",
@@ -163,27 +169,10 @@ In the `php.json` file, that's where the snippet is. You can create a snippet by
       ""
     ],
     "description": "Class definition"
-  },
-  "PHPDoc class …": {
-    "prefix": "doc_class",
-    "body": [
-      "/**",
-      " * ${6:undocumented class}",
-      " */",
-      "class ${1:ClassName} ${2:extends ${3:AnotherClass}} ${4:implements ${5:Interface}} {",
-      "\t$0",
-      "}",
-      ""
-    ],
-    "description": "Documented Class Declaration"
-  },
-  "function __construct": {
-    "prefix": "con",
-    "body": [
-      "${1:public} function __construct(${2:${3:Type} \\$${4:var}${5: = ${6:null}}}) {",
-      "\t\\$this->${4:var} = \\$${4:var};$0",
-      "}"
-    ]
   }
 }
 ```
+
+You can create a snippet by following the example.
+
+If you don't know what to write in your snippet, you can visit [friendly-snippets](https://github.com/rafamadriz/friendly-snippets/tree/main/snippets) or you can get snippets from the [vscode marketplace](https://marketplace.visualstudio.com/) there.
