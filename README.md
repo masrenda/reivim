@@ -59,22 +59,7 @@ Plugins
 ![Screenshot](./images/image4.png)
 </details>
 
-## Content
 
-*   (Neo)Vim config
-*   Alacritty config
-*   tmux config
-
-## Setup
-
-*   Requires [Neovim](https://neovim.io/) (>= 0.8).
-*   I used [Alacritty](https://alacritty.org/) as a terminal.
-
-## How to Use
-
-If you only wanna use the nvim configuration, then you should move the `nvim` folder to `~/.config/put_your_folder_here`.
-
-> *Coming soon ...* <br> *I'll write the doc on docusaurus.*
 
 ## Theme Reference
 
