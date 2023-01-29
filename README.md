@@ -16,7 +16,7 @@ You can follow these steps:
 ```bash
 git clone https://github.com/masrenda/renvim-dotfiles
 cd renvim-dotfiles
-mv nvim ~/PATH/.config/
+mv nvim ~/$PATH/.config/
 ```
 
 ## Customizing
