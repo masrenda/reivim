@@ -81,3 +81,39 @@ keymap("n", "<leader>dt", "<cmd>lua require'dap'.terminate()<cr>", opts)
 
 -- Lsp
 keymap("n", "<leader>lf", "<cmd>lua vim.lsp.buf.format{ async = true }<cr>", opts)
+
+--- ==================================================================================== ---
+-- Custom keymaps
+--- ==================================================================================== ---
+
+keymap("n", "x", '"_x')
+
+-- Increment/decrement
+keymap("n", "+", "<C-a>")
+keymap("n", "-", "<C-x>")
+
+-- Delete a word backwards
+keymap("n", "dw", 'vb"_d')
+
+-- Select all
+keymap("n", "<C-a>", "gg<S-v>G")
+
+-- Save with root permission (not working for now)
+--vim.api.nvim_create_user_command('W', 'w !sudo tee > /dev/null %', {})
+
+-- New tab
+keymap("n", "te", ":tabedit")
+-- Split window
+keymap("n", "ss", ":split<Return><C-w>w")
+keymap("n", "sv", ":vsplit<Return><C-w>w")
+-- Move window
+keymap("", "sh", "<C-w>h")
+keymap("", "sk", "<C-w>k")
+keymap("", "sj", "<C-w>j")
+keymap("", "sl", "<C-w>l")
+
+-- Resize window
+keymap("n", "<C-w><left>", "<C-w><")
+keymap("n", "<C-w><right>", "<C-w>>")
+keymap("n", "<C-w><up>", "<C-w>+")
+keymap("n", "<C-w><down>", "<C-w>-")

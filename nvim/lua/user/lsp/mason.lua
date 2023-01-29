@@ -10,6 +10,7 @@ local servers = {
   "yamlls",
   "vuels",
   "grammarly",
+  "tailwindcss",
 }
 
 local settings = {
