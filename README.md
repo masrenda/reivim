@@ -138,11 +138,7 @@ The `package.json` file contains `name`, `version`, `description`, etc.
   "contributes": {
     "snippets": [
       {
-        "language": [
-          "php",
-          "blade",
-          "blade.php"
-        ],
+        "language": ["php", "blade", "blade.php"],
         "path": "./php.json"
       }
     ]
@@ -169,7 +165,7 @@ In the `php.json` file, that's where the snippet is.
 
 You can create a snippet by following the example.
 
-If you don't know what to write in your snippet, you can visit [friendly-snippets](https://github.com/rafamadriz/friendly-snippets/tree/main/snippets) or you can get snippets from the [vscode marketplace](https://marketplace.visualstudio.com/) there. 
+If you don't know what to write in your snippet, you can visit [friendly-snippets](https://github.com/rafamadriz/friendly-snippets/tree/main/snippets) or you can get snippets from the [vscode marketplace](https://marketplace.visualstudio.com/) there.
 
 Once you've created your snippets, you can go straight to the `~/$PATH/.config/nvim/lua/user/cmp.lua` file and register your snippets there.
 
@@ -181,7 +177,7 @@ require("luasnip/loaders/from_vscode").lazy_load { paths = { "~/.config/nvim/sni
 require("luasnip/loaders/from_vscode").lazy_load { paths = { "~/.config/nvim/snippets/php" } }
 require("luasnip/loaders/from_vscode").lazy_load { paths = { "~/.config/nvim/snippets/blade" } }
 require("luasnip/loaders/from_vscode").lazy_load { paths = { "~/.config/nvim/snippets/md" } }
-require("luasnip/loaders/from_vscode").lazy_load {paths = {"~/$PATH/nvim/snippets/your_snippet"}}
+require("luasnip/loaders/from_vscode").lazy_load { paths = { "~/$PATH/nvim/snippets/your_snippet" } }
 
 ...
 ```
