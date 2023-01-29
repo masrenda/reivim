@@ -113,15 +113,15 @@ snippets
 │   ├── blade.json
 │   ├── helpers.json
 │   ├── livewire.json
-│   ├── package.json    <--
+│   ├── package.json    <<
 │   └── snippets.json
 ├── html
 │   ├── html.json
-│   └── package.json    <--
+│   └── package.json    <<
 ├── md
 │   ├── md.json
-│   └── package.json    <--
+│   └── package.json    <<
 └── php
-    ├── package.json    <--
+    ├── package.json    <<
     └── php.json
 ```
