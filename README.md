@@ -25,7 +25,6 @@ mv nvim ~/PATH/.config/
 <summary>
 Directory Structure
 </summary>  
-</details>
 <pre>
 ├── init.lua
 ├── lua
@@ -78,6 +77,7 @@ Directory Structure
         ├── package.json
         └── php.json
 </pre>
+</details>
 
 ### Plugins
 
