@@ -42,9 +42,24 @@ I've set this up for Vue, Nuxt, and PHP (soon) developers.
 *   [nvim-dap-ui](https://github.com/rcarriga/nvim-dap-ui)
 *   [DAPInstall.nvim](https://github.com/ravenxrz/DAPInstall.nvim)
 
+
+## Installation
+You can clone this repository by:
+```bash
+git clone https://github.com/masrenda/renvim-dotfiles`
+```
+
+Then inside the `renvim-dotfiles` folder there is an `nvim` folder. you can move the nvim folder into `~/.config/paste_here` by:
+
+```bash
+mv ~/PATH/renvim-dotfiles/nvim ~/.config/
+```
+Make sure you are connected to an internet connection. Then wait for all the plugins that are being downloaded to finish. 
+
+If when downloading a plugin there is an error during installation, just wait for the installation to finish. Then log back in by typing the command `nvim` on your terminal, then type `:Mason` in normal mode
 ## Custom Config(s)
-#### Snippets
- You can create your own snippet by:
+### Snippets
+
 
 In the `nvim`  directory in the `~/.config/nvim/snippets/your_snippet_folder_here` directory, add the "your snippets" folder there. Then you can configure your own snippets.
 
