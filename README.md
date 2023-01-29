@@ -101,6 +101,6 @@ return packer.startup(function(use)
 ...
 ```
 
-You don't need to enter `commit` and `{}` there
+You don't need to enter `commit` and `{}` there.
 
 ### Snippets
