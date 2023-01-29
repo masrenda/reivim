@@ -85,6 +85,7 @@ nvim
 
 You can delete, edit, or add plugins to the `~/PATH/nvim/lua/user/plugins.lua` file.
 
+`plugins.lua:`
 ```lua
 local fn = vim.fn
 
