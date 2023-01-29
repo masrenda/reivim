@@ -6,13 +6,20 @@ I've set up this configuration for javascript developers.
 
 ## Features
 
-#### Rich in Plugins <br>
+<details>
+<summary>
+Rich in Plugins
+</summary>
+You can view a list of plugins installed in the `~/.config/nvim/lua/user/plugins.lua` file.
 
-You can view a list of plugins installed in the `~/.config/nvim/lua/user/plugins.lua` file. <br>
+</details>
 
-#### Customizing Snippets <br>
-
-You can view a list of snippets installed in the ~/.config/nvim/snippets/ directory.
+<details>
+<summary>
+Customizing Snippets
+</summary>
+You can view a list of snippets installed in the `~/.config/nvim/plugin/` directory.
+</details>
 
 ## Theme Reference
 
