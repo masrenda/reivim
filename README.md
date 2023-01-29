@@ -17,8 +17,3 @@ cd renvim-dotfiles
 mv nvim ~/PATH/.config/
 ```
 
-
-
-## Theme Reference
-
-[Takuya's dotfiles](https://github.com/craftzdog/dotfiles-public)
