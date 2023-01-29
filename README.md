@@ -46,7 +46,7 @@ I've set this up for Vue, Nuxt, and PHP (soon) developers.
 ## Installation
 You can clone this repository by:
 ```bash
-git clone https://github.com/masrenda/renvim-dotfiles`
+git clone https://github.com/masrenda/renvim-dotfiles
 ```
 
 Then inside the `renvim-dotfiles` folder there is an `nvim` folder. you can move the nvim folder into `~/.config/paste_here` by:
