@@ -27,6 +27,7 @@ Directory Structure
 </summary>  
 <br>
 <pre>
+nvim
 ├── init.lua
 ├── lua
 │   └── user
