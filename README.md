@@ -163,7 +163,7 @@ In the `php.json` file, that's where the snippet is.
 }
 ```
 
-You can create a snippet by following the example.
+You can create a snippet by following the example above.
 
 If you don't know what to write in your snippet, you can visit [friendly-snippets](https://github.com/rafamadriz/friendly-snippets/tree/main/snippets) or you can get snippets from the [vscode marketplace](https://marketplace.visualstudio.com/) there.
 
@@ -172,11 +172,13 @@ Once you've created your snippets, you can go straight to the `~/$PATH/.config/n
 ```lua
 ...
 
--- Load custom snippets
 require("luasnip/loaders/from_vscode").lazy_load { paths = { "~/.config/nvim/snippets/html" } }
 require("luasnip/loaders/from_vscode").lazy_load { paths = { "~/.config/nvim/snippets/php" } }
 require("luasnip/loaders/from_vscode").lazy_load { paths = { "~/.config/nvim/snippets/blade" } }
 require("luasnip/loaders/from_vscode").lazy_load { paths = { "~/.config/nvim/snippets/md" } }
+
+
+-- Load custom snippets
 require("luasnip/loaders/from_vscode").lazy_load { paths = { "~/$PATH/nvim/snippets/your_snippet" } }
 
 ...
@@ -184,7 +186,9 @@ require("luasnip/loaders/from_vscode").lazy_load { paths = { "~/$PATH/nvim/snipp
 
 ### LSP
 
-If you wanna add an LSP, you need to download it from mason. Then register on `~/$PATH/nvim/lua/user/lsp/mason.lua`
+If you want to add an LSP, you need to download it from mason. Then register the LSP in the following way:
+
+Go to the `~/$PATH/nvim/lua/user/lsp/mason.lua` file. Then enter the LSP there.
 
 ```lua
 local servers = {
@@ -200,6 +204,8 @@ local servers = {
   "vuels",
   "grammarly",
   "tailwindcss",
+
+-- add LSP name here
   "lsp_name",
 }
 
@@ -215,6 +221,7 @@ M.on_attach = function(client, bufnr)
     client.server_capabilities.documentFormattingProvider = false
   end
 
+-- add LSP name here
   if client.name == "lsp_name" then
     client.server_capabilities.documentFormattingProvider = false
   end
@@ -223,4 +230,3 @@ M.on_attach = function(client, bufnr)
 ```
 
 ### Formatting
-
