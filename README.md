@@ -1,4 +1,4 @@
-# Renvim
+# Reivim
 
 ## Table of Contents
 
