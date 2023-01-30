@@ -14,8 +14,8 @@ I've set up this configuration for javascript developers.
 You can follow these steps:
 
 ```bash
-git clone https://github.com/masrenda/renvim-dotfiles
-cd renvim-dotfiles
+git clone https://github.com/masrenda/renvim
+cd renvim
 mv nvim ~/$PATH/.config/
 ```
 
@@ -181,3 +181,46 @@ require("luasnip/loaders/from_vscode").lazy_load { paths = { "~/$PATH/nvim/snipp
 
 ...
 ```
+
+### LSP
+
+If you wanna add an LSP, you need to download it from mason. Then register on `~/$PATH/nvim/lua/user/lsp/mason.lua`
+
+```lua
+local servers = {
+  "sumneko_lua",
+  "cssls",
+  "html",
+  "tsserver",
+  "pyright",
+  "intelephense",
+  "bashls",
+  "jsonls",
+  "yamlls",
+  "vuels",
+  "grammarly",
+  "tailwindcss",
+  "lsp_name",
+}
+
+...
+```
+
+Then proceed to register the LSP server in the `~/$PATH/nvim/lua/user/lsp/handlers.lua` file.
+
+```lua
+M.on_attach = function(client, bufnr)
+
+  if client.name == "sumneko_lua" then
+    client.server_capabilities.documentFormattingProvider = false
+  end
+
+  if client.name == "lsp_name" then
+    client.server_capabilities.documentFormattingProvider = false
+  end
+
+...
+```
+
+### Formatting
+
