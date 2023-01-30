@@ -92,9 +92,9 @@ Find `return packer.startup(function(use)`, then add the plugin below it.
 
 return packer.startup(function(use)
   -- My plugins here
-  use { "wbthomason/packer.nvim", commit = "6afb67460283f0e990d35d229fd38fdc04063e0a" } -- Have packer manage itself
-  use { "nvim-lua/plenary.nvim", commit = "4b7e52044bbb84242158d977a50c4cbcd85070c7" } -- Useful lua functions used by lots of plugins
-  use { "windwp/nvim-autopairs", commit = "4fc96c8f3df89b6d23e5092d31c866c53a346347" } -- Autopairs, integrates with both cmp and treesitter
+  use { "wbthomason/packer.nvim", commit = "6afb67460283f0e990d35d229fd38fdc04063e0a" }
+  use { "nvim-lua/plenary.nvim", commit = "4b7e52044bbb84242158d977a50c4cbcd85070c7" }
+  use { "windwp/nvim-autopairs", commit = "4fc96c8f3df89b6d23e5092d31c866c53a346347" }
   use { "numToStr/Comment.nvim", commit = "97a188a98b5a3a6f9b1b850799ac078faa17ab67" }
   use 'authorplugin/plugin'
 
@@ -172,13 +172,11 @@ Once you've created your snippets, you can go straight to the `~/$PATH/.config/n
 ```lua
 ...
 
+-- Load custom snippets
 require("luasnip/loaders/from_vscode").lazy_load { paths = { "~/.config/nvim/snippets/html" } }
 require("luasnip/loaders/from_vscode").lazy_load { paths = { "~/.config/nvim/snippets/php" } }
 require("luasnip/loaders/from_vscode").lazy_load { paths = { "~/.config/nvim/snippets/blade" } }
 require("luasnip/loaders/from_vscode").lazy_load { paths = { "~/.config/nvim/snippets/md" } }
-
-
--- Load custom snippets
 require("luasnip/loaders/from_vscode").lazy_load { paths = { "~/$PATH/nvim/snippets/your_snippet" } }
 
 ...
@@ -191,6 +189,7 @@ If you want to add an LSP, you need to download it from mason. Then register the
 Go to the `~/$PATH/nvim/lua/user/lsp/mason.lua` file. Then enter the LSP there.
 
 ```lua
+-- add LSP server
 local servers = {
   "sumneko_lua",
   "cssls",
@@ -204,8 +203,6 @@ local servers = {
   "vuels",
   "grammarly",
   "tailwindcss",
-
--- add LSP server
   "lsp_name",
 }
 
@@ -215,13 +212,13 @@ local servers = {
 Then proceed to register the LSP server in the `~/$PATH/nvim/lua/user/lsp/handlers.lua` file.
 
 ```lua
+-- add LSP server
 M.on_attach = function(client, bufnr)
 
   if client.name == "sumneko_lua" then
     client.server_capabilities.documentFormattingProvider = false
   end
 
--- add LSP server
   if client.name == "lsp_name" then
     client.server_capabilities.documentFormattingProvider = false
   end
