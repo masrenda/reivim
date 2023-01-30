@@ -71,11 +71,12 @@ local function lsp_keymaps(bufnr)
 end
 
 M.on_attach = function(client, bufnr)
-  if client.name == "tsserver" then
+
+  if client.name == "sumneko_lua" then
     client.server_capabilities.documentFormattingProvider = false
   end
 
-  if client.name == "sumneko_lua" then
+  if client.name == "cssls" then
     client.server_capabilities.documentFormattingProvider = false
   end
 
@@ -83,15 +84,35 @@ M.on_attach = function(client, bufnr)
     client.server_capabilities.documentFormattingProvider = false
   end
 
-  if client.name == "vue" then
+  if client.name == "tsserver" then
     client.server_capabilities.documentFormattingProvider = false
   end
 
-  if client.name == "php" then
+  if client.name == "pyright" then
     client.server_capabilities.documentFormattingProvider = false
   end
 
-  if client.name == "markdown" then
+  if client.name == "intelephense" then
+    client.server_capabilities.documentFormattingProvider = false
+  end
+
+  if client.name == "bashls" then
+    client.server_capabilities.documentFormattingProvider = false
+  end
+
+  if client.name == "jsonls" then
+    client.server_capabilities.documentFormattingProvider = false
+  end
+
+  if client.name == "yamlls" then
+    client.server_capabilities.documentFormattingProvider = false
+  end
+  
+  if client.name == "vuels" then
+    client.server_capabilities.documentFormattingProvider = false
+  end
+
+  if client.name == "grammarly" then
     client.server_capabilities.documentFormattingProvider = false
   end
 

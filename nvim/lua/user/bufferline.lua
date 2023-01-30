@@ -3,30 +3,59 @@ if not status_ok then
   return
 end
 
+-- bufferline.setup {
+--   options = {
+--     close_command = "Bdelete! %d", -- can be a string | function, see "Mouse actions"
+--     right_mouse_command = "Bdelete! %d", -- can be a string | function, see "Mouse actions"
+--     offsets = { { filetype = "NvimTree", text = "", padding = 1 } },
+--     separator_style = "thin", -- | "thick" | "thin" | { 'any', 'any' },
+--   },
+
 bufferline.setup {
   options = {
-    close_command = "Bdelete! %d", -- can be a string | function, see "Mouse actions"
-    right_mouse_command = "Bdelete! %d", -- can be a string | function, see "Mouse actions"
-    offsets = { { filetype = "NvimTree", text = "", padding = 1 } },
-    separator_style = "thin", -- | "thick" | "thin" | { 'any', 'any' },
+    mode = "tabs",
+    separator_style = "slant",
+    always_show_bufferline = true,
+    show_buffer_close_icons = false,
+    show_close_icon = false,
+    color_icons = true,
   },
 
   highlights = {
-    fill = {
-      fg = { attribute = "fg", highlight = "#ff0000" },
-      bg = { attribute = "bg", highlight = "TabLine" },
+    separator = {
+      fg = "#073642",
+      bg = "#002b36",
     },
-
+    separator_selected = {
+      fg = "#073642",
+    },
     background = {
-      fg = { attribute = "fg", highlight = "TabLine" },
-      bg = { attribute = "bg", highlight = "TabLine" },
+      fg = "#657b83",
+      bg = "#002b36",
+    },
+    buffer_selected = {
+      fg = "#fdf6e3",
+      bold = true,
+    },
+    fill = {
+      bg = "#073642",
     },
 
+    -- fill = {
+    --    fg = { attribute = "fg", highlight = "#ff0000" },
+    --    bg = { attribute = "bg", highlight = "TabLine" },
+    -- },
+    --
+    -- background = {
+    --    fg = { attribute = "fg", highlight = "TabLine" },
+    --    bg = { attribute = "bg", highlight = "TabLine" },
+    -- },
+    --
     buffer_visible = {
       fg = { attribute = "fg", highlight = "TabLine" },
       bg = { attribute = "bg", highlight = "TabLine" },
     },
-
+    --
     close_button = {
       fg = { attribute = "fg", highlight = "TabLine" },
       bg = { attribute = "bg", highlight = "TabLine" },
@@ -84,17 +113,17 @@ bufferline.setup {
       fg = { attribute = "fg", highlight = "TabLine" },
       bg = { attribute = "bg", highlight = "TabLine" },
     },
-
-    separator = {
-      fg = { attribute = "bg", highlight = "TabLine" },
-      bg = { attribute = "bg", highlight = "TabLine" },
-    },
-
-    separator_selected = {
-      fg = { attribute = "bg", highlight = "Normal" },
-      bg = { attribute = "bg", highlight = "Normal" },
-    },
-
+    --
+    -- separator = {
+    --    fg = { attribute = "bg", highlight = "TabLine" },
+    --    bg = { attribute = "bg", highlight = "TabLine" },
+    -- },
+    --
+    -- separator_selected = {
+    --    fg = { attribute = "bg", highlight = "Normal" },
+    --    bg = { attribute = "bg", highlight = "Normal" },
+    -- },
+    --
     indicator_selected = {
       fg = { attribute = "fg", highlight = "LspDiagnosticsDefaultHint" },
       bg = { attribute = "bg", highlight = "Normal" },
