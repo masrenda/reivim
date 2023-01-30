@@ -6,7 +6,7 @@ I've set up this configuration for javascript developers.
 
 ## Features
 
-![Hello](./images/image1.png) 
+![Hello](./images/image.png) 
 
 *   Rich in Plugins
 *   Customizing Snippets
