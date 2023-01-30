@@ -1,15 +1,27 @@
 # Renvim
 
+## Table of Contents
+
+*   [Features](#features)
+*   [Installation](#installation)
+*   [Customizing](#customizing)
+    *   [Plugins](#plugins)
+    *   [Snippets](#snippets)
+    *   [LSP](#lsp)
+    *   [Formatting](#formatting)
+
 I've set up this configuration for javascript developers.
 
 > **Warning** - If you wanna try customizing the configuration other than what's given in the documentation, do it at your own risk.
 
 ## Features
 
-![Hello](./images/image.png) 
+![Hello](./images/image.png)
 
 *   Rich in Plugins
 *   Customizing Snippets
+
+[Back to Top](#table-of-contents)
 
 ## Installation
 
@@ -20,6 +32,8 @@ git clone https://github.com/masrenda/renvim
 cd renvim
 mv nvim ~/$PATH/.config/
 ```
+
+[Back to Top](#table-of-contents)
 
 ## Customizing
 
@@ -98,12 +112,13 @@ return packer.startup(function(use)
   use { "nvim-lua/plenary.nvim", commit = "4b7e52044bbb84242158d977a50c4cbcd85070c7" }
   use { "windwp/nvim-autopairs", commit = "4fc96c8f3df89b6d23e5092d31c866c53a346347" }
   use { "numToStr/Comment.nvim", commit = "97a188a98b5a3a6f9b1b850799ac078faa17ab67" }
-  use 'authorplugin/plugin'
 
 ...
 ```
 
 You don't need to enter `commit` and `{}` there.
+
+[Back to Top](#table-of-contents)
 
 ### Snippets
 
@@ -179,10 +194,11 @@ require("luasnip/loaders/from_vscode").lazy_load { paths = { "~/.config/nvim/sni
 require("luasnip/loaders/from_vscode").lazy_load { paths = { "~/.config/nvim/snippets/php" } }
 require("luasnip/loaders/from_vscode").lazy_load { paths = { "~/.config/nvim/snippets/blade" } }
 require("luasnip/loaders/from_vscode").lazy_load { paths = { "~/.config/nvim/snippets/md" } }
-require("luasnip/loaders/from_vscode").lazy_load { paths = { "~/$PATH/nvim/snippets/your_snippet" } }
 
 ...
 ```
+
+[Back to Top](#table-of-contents)
 
 ### LSP
 
@@ -205,7 +221,6 @@ local servers = {
   "vuels",
   "grammarly",
   "tailwindcss",
-  "lsp_name",
 }
 
 ...
@@ -221,11 +236,42 @@ M.on_attach = function(client, bufnr)
     client.server_capabilities.documentFormattingProvider = false
   end
 
-  if client.name == "lsp_name" then
-    client.server_capabilities.documentFormattingProvider = false
-  end
-
 ...
 ```
 
+[Back to Top](#table-of-contents)
+
 ### Formatting
+
+Formatter taken from [null-ls.nvim](https://github.com/jose-elias-alvarez/null-ls.nvim/blob/main/doc/BUILTINS.md#formatting). You can see the formatter config on `./nvim/lua/user/lsp/null-ls.lua` file.
+
+```lua
+...
+
+-- add formatter here
+null_ls.setup {
+  debug = false,
+  sources = {
+    formatting.prettier.with {
+      extra_filetypes = { "toml" },
+      extra_args = { "--no-semi", "--single-quote", "--jsx-single-quote" },
+    },
+    formatting.black.with { extra_args = { "--fast" } },
+    formatting.stylua,
+    formatting.blade_formatter.with {
+      extra_filetypes = { "blade", "php", "blade.php" },
+      extra_args = { "--write", "$FILENAME" },
+      command = "blade-formatter",
+    },
+    formatting.google_java_format,
+    formatting.remark.with {
+      extra_filetypes = { "markdown" },
+      extra_args = { "--no-color", "--silent" },
+      command = "remark",
+    },
+    diagnostics.flake8,
+  },
+}
+```
+
+[Back to Top](#table-of-contents)
