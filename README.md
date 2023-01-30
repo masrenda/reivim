@@ -6,6 +6,8 @@ I've set up this configuration for javascript developers.
 
 ## Features
 
+![Hello](./images/image.png) 
+
 *   Rich in Plugins
 *   Customizing Snippets
 
