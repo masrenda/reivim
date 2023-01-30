@@ -9,6 +9,7 @@
     *   [Snippets](#snippets)
     *   [LSP](#lsp)
     *   [Formatting](#formatting)
+*   [Keymaps](#keymaps)
 
 I've set up this configuration for javascript developers.
 
