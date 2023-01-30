@@ -373,3 +373,6 @@ keymap("n", "<C-w><down>", "<C-w>-")
 ```
 
 [Back to Top](#table-of-contents)
+
+## License
+[MIT](./LICENSE.md) 
