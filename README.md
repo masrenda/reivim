@@ -371,3 +371,5 @@ keymap("n", "<C-w><right>", "<C-w>>")
 keymap("n", "<C-w><up>", "<C-w>+")
 keymap("n", "<C-w><down>", "<C-w>-")
 ```
+
+[Back to Top](#table-of-contents)
