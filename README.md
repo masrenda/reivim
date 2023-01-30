@@ -205,7 +205,7 @@ local servers = {
   "grammarly",
   "tailwindcss",
 
--- add LSP name here
+-- add LSP name
   "lsp_name",
 }
 
@@ -221,7 +221,7 @@ M.on_attach = function(client, bufnr)
     client.server_capabilities.documentFormattingProvider = false
   end
 
--- add LSP name here
+-- add LSP name
   if client.name == "lsp_name" then
     client.server_capabilities.documentFormattingProvider = false
   end
