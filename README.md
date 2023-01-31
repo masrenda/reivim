@@ -14,12 +14,12 @@
 > **Warning** - If you wanna try customizing the configuration other than what's given in the documentation, do it at your own risk.
 
 ## Features
-<p align="center">
-<img align="left" width="50%" src="./images/image1.png" alt="image1">
-<img align="right" width="50%" src="./images/image2.png" alt="image2">
-</p>
-<img align="left" width="50%" src="./images/image3.png" alt="image3">
-<img align="right" width="50%" src="./images/image4.png" alt="image4">
+
+![image1](./images/image1.png)     
+![image2](./images/image2.png)
+![image1](./images/image3.png)
+![image2](./images/image4.png)
+
 
 *   Rich in Plugins
 *   Customizing Snippets
