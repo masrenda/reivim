@@ -16,8 +16,8 @@
 ## Features
 
 <div style="display: flex; flex-direction: row;">
- <img class="img" src="./images/image1.png" />
- <img class="img" src="./images/image2.png" />
+ <img class="img" width="50%" src="./images/image1.png" />
+ <img class="img" width="50%" src="./images/image2.png" />
 </div>
 
 *   Rich in Plugins
