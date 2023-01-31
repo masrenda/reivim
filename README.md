@@ -15,11 +15,10 @@
 
 ## Features
 
-![image1](./images/image1.png)     
-![image2](./images/image2.png)
-![image1](./images/image3.png)
-![image2](./images/image4.png)
-
+<div style="display: flex; flex-direction: row;">
+ <img class="img" src="./images/image1.png" />
+ <img class="img" src="./images/image2.png" />
+</div>
 
 *   Rich in Plugins
 *   Customizing Snippets
