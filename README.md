@@ -11,8 +11,6 @@
     *   [Formatting](#formatting)
 *   [Keymaps](#keymaps)
 
-I've set up this configuration for javascript developers.
-
 > **Warning** - If you wanna try customizing the configuration other than what's given in the documentation, do it at your own risk.
 
 ## Features
