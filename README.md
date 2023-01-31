@@ -16,7 +16,7 @@
 ## Features
 
 <div style="display: flex; flex-direction: row;">
- <img class="img" width="50%" src="./images/image1.png" />
+ <img class="img" width="30%" src="./images/image1.png" />
  <img class="img" align="right" width="50%" src="./images/image2.png" />
 </div>
 
