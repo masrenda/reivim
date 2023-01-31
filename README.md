@@ -383,4 +383,4 @@ keymap("n", "<C-w><down>", "<C-w>-")
 
 ## License
 
-[MIT](./LICENSE.md)
+Reivim is released under the [MIT License](./LICENSE.md).
