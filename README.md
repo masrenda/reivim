@@ -201,7 +201,7 @@ require("luasnip/loaders/from_vscode").lazy_load { paths = { "~/.config/nvim/sni
 
 ### LSP
 
-If you want to add an LSP, you need to download it from mason. Then register the LSP in the following way:
+If you want to add an LSP, you need to see the list of LSPs in [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md) . Then register the LSP in the following way:
 
 Go to the `~/$PATH/nvim/lua/user/lsp/mason.lua` file. Then enter the LSP there.
 
