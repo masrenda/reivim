@@ -16,9 +16,9 @@
 ## Features
 
 <img align="left" width="50%" src="./images/image1.png" alt="image1">
-<img align="rigt" width="50%" src="./images/image2.png" alt="image2">
+<img align="right" width="50%" src="./images/image2.png" alt="image2">
 <img align="left" width="50%" src="./images/image3.png" alt="image3">
-<img align="left" width="50%" src="./images/image4.png" alt="image4">
+<img align="right" width="50%" src="./images/image4.png" alt="image4">
 
 *   Rich in Plugins
 *   Customizing Snippets
