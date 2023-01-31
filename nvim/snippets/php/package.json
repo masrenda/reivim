@@ -1,0 +1,17 @@
+{
+  "name": "php",
+  "version": "1.0.0",
+  "description": "PHP code snippets",
+  "contributes": {
+    "snippets": [
+      {
+        "language": [
+          "php",
+          "blade",
+          "blade.php"
+        ],
+        "path": "./php.json"
+      }
+    ]
+  }
+}
