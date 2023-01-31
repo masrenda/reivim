@@ -35,7 +35,7 @@ You can follow these steps:
 
 ```bash
 git clone https://github.com/masrenda/reivim
-cd renvim
+cd reivim
 mv nvim ~/$PATH/.config/
 ```
 
