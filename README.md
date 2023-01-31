@@ -1,5 +1,7 @@
 # Reivim
 
+This project will continue until it reaches true wealth.
+
 ## Table of Contents
 
 *   [Features](#features)
