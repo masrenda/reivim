@@ -29,7 +29,7 @@ I've set up this configuration for javascript developers.
 You can follow these steps:
 
 ```bash
-git clone https://github.com/masrenda/renvim
+git clone https://github.com/masrenda/reivim
 cd renvim
 mv nvim ~/$PATH/.config/
 ```
@@ -375,4 +375,5 @@ keymap("n", "<C-w><down>", "<C-w>-")
 [Back to Top](#table-of-contents)
 
 ## License
-[MIT](./LICENSE.md) 
+
+[MIT](./LICENSE.md)
