@@ -1,0 +1,19 @@
+{
+  "name": "reivim",
+  "version": "1.0.0",
+  "scripts": {
+    "release": "release-it"
+  },
+  "devDependencies": {
+    "release-it": "^15.6.0"
+  },
+  "release-it": {
+    "hooks": {},
+    "git": {
+      "requireUpstream": false
+    },
+    "github": {
+      "release": true
+    }
+  }
+}
