@@ -11,6 +11,8 @@ local servers = {
   "vuels",
   "grammarly",
   "tailwindcss",
+  "denols",
+  "eslint",
 }
 
 local settings = {

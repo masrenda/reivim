@@ -18,6 +18,7 @@ require("luasnip/loaders/from_vscode").lazy_load { paths = { "~/.config/nvim/sni
 require("luasnip/loaders/from_vscode").lazy_load { paths = { "~/.config/nvim/snippets/php" } }
 require("luasnip/loaders/from_vscode").lazy_load { paths = { "~/.config/nvim/snippets/blade" } }
 require("luasnip/loaders/from_vscode").lazy_load { paths = { "~/.config/nvim/snippets/md" } }
+require("luasnip/loaders/from_vscode").lazy_load { paths = { "~/.config/nvim/snippets/js-es6" } }
 -- luasnip.filetype_extend("all", { "_" })
 
 local check_backspace = function()

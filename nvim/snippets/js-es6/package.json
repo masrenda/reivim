@@ -1,0 +1,20 @@
+{
+  "name": "js-es6",
+  "version": "1.0.0",
+  "description": "Javascript code snippets",
+  "contributes": {
+    "snippets": [
+      {
+        "language": [
+          "javascript",
+          "typescript",
+          "javascriptreact",
+          "typescriptreact",
+          "html",
+          "vue"
+        ],
+        "path": "./js-es6.json"
+      }
+    ]
+  }
+}
