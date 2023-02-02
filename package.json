@@ -8,7 +8,9 @@
     "release-it": "^15.6.0"
   },
   "release-it": {
-    "hooks": {},
+    "hooks": {
+      "after:bump": "npx auto-changelog -p"
+    },
     "git": {
       "requireUpstream": false
     },
